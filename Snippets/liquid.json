@@ -1,0 +1,78 @@
+{
+	// Place your snippets for liquid here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"liquid syntax": {
+		"prefix": "li",
+		"body": [
+			"{%- $1 -%}$2"
+		],
+		"description": "print starting liquid syntax"
+	},
+	"closing liquid syntax": {
+		"prefix": "il",
+		"body": [
+			"{%- end$1 -%}$2"
+		],
+		"description": "print ending liquid syntax"
+	},
+	"svg": {
+		"prefix": "sv",
+		"body": [
+			"{% asset_url 'filename.svg' %}"
+		],
+		"description": "svg snippet"
+	},
+	"render": {
+		"prefix": "re",
+		"body": [
+			"{% render 'snippetName' %}"
+		],
+		"description": "render snippet"
+	},
+	"consolelog": {
+		"prefix": "con",
+		"body": [
+			"<script>console.log('test', '{{}}');</script>"
+		],
+		"description": "console log script"
+	},
+	"table": {
+		"prefix": "table",
+		"body": [
+			"<table>\n\t<tr>\n\t\t<th>Title1</th>\n\t\t<th>Title2</th>\n\t</tr>\n\t<tr>\n\t\t<td>Cell1</td>\n\t\t<td>Cell2</td>\n\t</tr>\n\t<tr>\n\t\t<td>Cell1</td>\n\t\t<td>Cell2</td>\n\t</tr>\n</table>"
+		],
+		"description": "simple table structure"
+	},
+	"minimap mark": {
+		"prefix": "m",
+		"body": [
+			"<!-- MARK: $1 -->"
+		],
+		"description": "minimap mark"
+	},
+	"phone link": {
+		"prefix": "tel",
+		"body": [
+			"<a href=\"tel:+1800-284-5779\">call</a>"
+		],
+		"description": "phone link"
+	},
+	"mail link": {
+		"prefix": "mail",
+		"body": [
+			"<a href=\"mailto:dean@test.com\">call</a>"
+		],
+		"description": "mail link"
+	}
+}

@@ -1,0 +1,423 @@
+{
+	"height width": {
+		"prefix": "hw",
+		"body": [
+			"height: 100%;\nwidth: 100%;"
+		],
+		"description": "height width 100%"
+	},
+	"desktop mobile hiding": {
+		"prefix": "dm",
+		"body": [
+			"&.desktop {\n\tdisplay: none;\n\n\t@include breakpoint(\"medium\") {\n\t\tdisplay: block;\n\t}\n}\n&.mobile {\n\t@include breakpoint(\"medium\") {\n\t\tdisplay: none;\n\t}\n}"
+		],
+		"description": "print stencil color function"
+	},
+	"pseudo hiding": {
+		"prefix": "ba",
+		"body": [
+			"&:before, &:after {\n\tdisplay: none;\n}$1"
+		],
+		"description": "Hiding pseudo"
+	},
+	"stencil color": {
+		"prefix": "sc",
+		"body": [
+			"stencilColor($1)"
+		],
+		"description": "print stencil color function"
+	},
+	"stencil color primary": {
+		"prefix": "scp",
+		"body": [
+			"stencilColor(color-primary)"
+		],
+		"description": "print stencil color function"
+	},
+	"stencil color primary dark": {
+		"prefix": "scpd",
+		"body": [
+			"stencilColor(color-primaryDark)"
+		],
+		"description": "print stencil color function"
+	},
+	"stencil color textBase": {
+		"prefix": "sct",
+		"body": [
+			"stencilColor(color-textBase)"
+		],
+		"description": "print stencil color function"
+	},
+	"stencil color black": {
+		"prefix": "scb",
+		"body": [
+			"stencilColor(color-black)"
+		],
+		"description": "print stencil color function"
+	},
+	"stencil color white": {
+		"prefix": "scw",
+		"body": [
+			"stencilColor(color-white)"
+		],
+		"description": "print stencil color function"
+	},
+	"stencil font family": {
+		"prefix": "sf",
+		"body": [
+			"stencilFontFamily(body-font)"
+		],
+		"description": "print stencil font family function"
+	},
+	"stencil font family heading": {
+		"prefix": "sff",
+		"body": [
+			"stencilFontFamily(headings-font)"
+		],
+		"description": "print stencil headings font family function"
+	},
+	"shopify font family": {
+		"prefix": "vf",
+		"body": [
+			"var(--font-body-family)"
+		],
+		"description": "print shopify font family function"
+	},
+	"shopify color": {
+		"prefix": "vv",
+		"body": [
+			"var(--color-$1)"
+		],
+		"description": "print shopify color var"
+	},
+	"shopify color primary": {
+		"prefix": "vvp",
+		"body": [
+			"var(--color-primary)"
+		],
+		"description": "print shopify primary color var"
+	},
+	"shopify color black": {
+		"prefix": "vvb",
+		"body": [
+			"var(--color-black)"
+		],
+		"description": "print shopify black color var"
+	},
+	"shopify color white": {
+		"prefix": "vvw",
+		"body": [
+			"var(--color-white)"
+		],
+		"description": "print shopify white color var"
+	},
+	"shopify font heading": {
+		"prefix": "vh",
+		"body": [
+			"font-family: var(--font-heading-family);$1"
+		],
+		"description": "print shopify font heading"
+	},
+	"shopify font body": {
+		"prefix": "vp",
+		"body": [
+			"font-family: var(--font-body-family);$1"
+		],
+		"description": "print shopify font body"
+	},
+	"shopify font body bold": {
+		"prefix": "vb",
+		"body": [
+			"font-family: var(--font-body-family-bold);$1"
+		],
+		"description": "print shopify font body bold"
+	},
+	"shopify small break": {
+		"prefix": "vs",
+		"body": [
+			"@media screen and (min-width: 750px) {\n\t$1\n}"
+		],
+		"description": "print shopify small breakpoint"
+	},
+	"shopify medium break": {
+		"prefix": "vm",
+		"body": [
+			"@media(min-width: 990px) {\n\t$1\n}"
+		],
+		"description": "print shopify medium breakpoint"
+	},
+	"shopify large break": {
+		"prefix": "vl",
+		"body": [
+			"@media(min-width: 1200px) {\n\t$1\n}"
+		],
+		"description": "print shopify large breakpoint"
+	},
+	"shopify mobile max break": {
+		"prefix": "vma",
+		"body": [
+			"@media(max-width: 989px) {\n\t$1\n}"
+		],
+		"description": "print shopify breakpoint"
+	},
+	"media custom": {
+		"prefix": "mc",
+		"body": [
+			"@media(max-width: $1) {\n\t$2\n}"
+		],
+		"description": "custom include"
+	},
+	"media small max": {
+		"prefix": "mxs",
+		"body": [
+			"@media(max-width: 749px) {\n\t$1\n}"
+		],
+		"description": "small include"
+	},
+	"media small": {
+		"prefix": "mis",
+		"body": [
+			"@media(min-width: 750px) {\n\t$1\n}"
+		],
+		"description": "small include"
+	},
+	"media medium max": {
+		"prefix": "mxm",
+		"body": [
+			"@media(max-width: 799px) {\n\t$1\n}"
+		],
+		"description": "medium include"
+	},
+	"media medium": {
+		"prefix": "mim",
+		"body": [
+			"@media(min-width: 800px) {\n\t$1\n}"
+		],
+		"description": "medium include"
+	},
+	"media large": {
+		"prefix": "mil",
+		"body": [
+			"@media(min-width: 1280px) {\n\t$1\n}"
+		],
+		"description": "large include"
+	},
+	"media large max": {
+		"prefix": "mxl",
+		"body": [
+			"@media(max-width: 1279px) {\n\t$1\n}"
+		],
+		"description": "large include"
+	},
+	"include medium": {
+		"prefix": "im",
+		"body": [
+			"@include breakpoint(\"medium\") {\n\t$1\n}"
+		],
+		"description": "medium include"
+	},
+	"include small": {
+		"prefix": "is",
+		"body": [
+			"@include breakpoint(\"small\") {\n\t$1\n}"
+		],
+		"description": "small include"
+	},
+	"include large": {
+		"prefix": "il",
+		"body": [
+			"@include breakpoint(\"large\") {\n\t$1\n}"
+		],
+		"description": "large include"
+	},
+	"include custom": {
+		"prefix": "ic",
+		"body": [
+			"@include breakpoint($1) {\n\t$2\n}"
+		],
+		"description": "custom include"
+	},
+	"include medium max": {
+		"prefix": "imm",
+		"body": [
+			"@include maxBreakpoint(\"medium\") {\n\t$1\n}"
+		],
+		"description": "medium include max"
+	},
+	"include small max": {
+		"prefix": "ism",
+		"body": [
+			"@include maxBreakpoint(\"small\") {\n\t$1\n}"
+		],
+		"description": "small include max"
+	},
+	"include large max": {
+		"prefix": "ilm",
+		"body": [
+			"@include maxBreakpoint(\"large\") {\n\t$1\n}"
+		],
+		"description": "large include max"
+	},
+	"include custom max": {
+		"prefix": "icm",
+		"body": [
+			"@include maxBreakpoint($1) {\n\t$2\n}"
+		],
+		"description": "custom include max"
+	},
+	"has children": {
+		"prefix": "hc",
+		"body": [
+			"&:has(.childSelector:nth-child(2):last-child) {\n\t$1\n}"
+		],
+		"description": "select parent that has number of children"
+	},
+	"background-color": {
+		"prefix": "bc",
+		"body": [
+			"background-color: stencilColor($1);"
+		],
+		"description": "background-color css"
+	},
+	"font-family": {
+		"prefix": "ff",
+		"body": [
+			"font-family: stencilFontFamily($1-font);"
+		],
+		"description": "font-family css"
+	},
+	"flex": {
+		"prefix": "df",
+		"body": [
+			"display: flex;\njustify-content: center;\nalign-items: center;"
+		],
+		"description": "flex css"
+	},
+	"grid": {
+		"prefix": "dg",
+		"body": [
+			"display: grid !important;\n        grid-template-columns: auto;\n        gap: 24px;\n\n        @include breakpoint(\"medium\") {\n            grid-template-columns: repeat(3, minmax(0, 1fr));\n        }  \n        @include breakpoint(\"large\") {\n            gap: 32px;\n        }"
+		],
+		"description": "grid css"
+	},
+	"position-absolute": {
+		"prefix": "pa",
+		"body": [
+			"position: absolute;\ntop: 0;\nleft: 0;\nwidth: 100%;\nheight: 100%;"
+		],
+		"description": "position absolute base styling"
+	},
+	"vertical-horizontal-center": {
+		"prefix": "vhc",
+		"body": [
+			"position: absolute;\nleft: 50%;\ntop: 50%;\ntransform: translate(-50%, -50%);"
+		],
+		"description": "vertical horizontal center"
+	},
+	"horizontal-center": {
+		"prefix": "hc",
+		"body": [
+			"left: 50%;\ntransform: translateX(-50%);"
+		],
+		"description": "horizontal center"
+	},
+	"vertical-center": {
+		"prefix": "vc",
+		"body": [
+			"top: 50%;\ntransform: translateY(-50%);"
+		],
+		"description": "vertical center"
+	},
+	"fix": {
+		"prefix": "fix",
+		"body": [
+			"// FIXME: "
+		],
+		"description": "fix"
+	},
+	"wrap css": {
+		"scope": ["scss", "css"],
+		"prefix": "wrapper",
+		"body": "$1 {\n\t${TM_SELECTED_TEXT}\n}$2"
+	},
+	"minimap mark": {
+		"prefix": "m",
+		"body": "// MARK: $1",
+		"description": "minimap mark"
+	},
+	"important": {
+		"prefix": ["!","!im"],
+		"body": "!important",
+		"description": "print !important"
+	},
+	"hover": {
+		"prefix": "ho",
+		"body": "&:hover, &:focus, &:active {\n\t$1\n}$2",
+		"description": "Hover Styles"
+	},
+	"box shadow": {
+		"prefix": "bs",
+		"body": "box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.36);",
+		"description": "box shadow"
+	},
+	"box shadow light": {
+		"prefix": "bsl",
+		"body": "box-shadow: 0px 2px 17px rgba(0, 0, 0, 0.05);",
+		"description": "box shadow light"
+	},
+	"transition": {
+		"prefix": "tr",
+		"body": "transition: 0.3s ease;",
+		"description": "simple transition"
+	},
+	"background image overlay": {
+		"prefix": ["ov","over","overlay"],
+		"body": "box-shadow: 0px 0px 0px 99999px rgba(0, 0, 0, 0.25) inset;",
+		"description": "background image overlay"
+	},
+	"background template": {
+		"prefix": ["bg", "back"],
+		"body": "background: url($1) center/cover no-repeat;",
+		"description": "background template"
+	},
+	"border-image": {
+		"prefix": ["bi", "borderimage"],
+		"body": "border-image: linear-gradient(to right, stencilColor(color-grey2), rgba(stencilColor(color-grey2), 0.8)) fill 1;",
+		"description": "border-image"
+	},
+	"animate-appear": {
+		"prefix": ["fade-animate", "fa"],
+		"body": "@supports (animation-timeline: view()) {\n    @media (prefers-reduced-motion: no-preference) {\n        @keyframes appear {\n            from {\n                opacity: 0;\n                scale: 0.8;\n            }\n            to {\n                opacity: 1;\n                scale: 1;\n            }\n        }\n        .animate-appear {\n            animation: appear linear;\n            animation-timeline: view();\n            animation-range: entry 0% cover 50%;\n        }\n    }\n}",
+		"description": "animate-appear"
+	},
+	"animate-scroll": {
+		"prefix": ["sa", "scroll-animate"],
+		"body": "@supports (animation-timeline: view()) {\n    @media (prefers-reduced-motion: no-preference) {\n        @keyframes appear {\n            from {\n                opacity: 0;\n                scale: 0.8;\n            }\n            to {\n                opacity: 1;\n                scale: 1;\n            }\n        }\n        .animate-appear {\n            animation: appear linear;\n            animation-timeline: view();\n            animation-range: entry 0% cover 50%;\n        }\n    }\n}",
+		"description": "animate-scroll"
+	},
+	"accordion-animate": {
+		"prefix": ["accordion-animate"],
+		"body": ".content {\n  display: grid;\n  grid-template-rows: 0fr;\n  transition: grid-template-rows 0.5s ease-in-out;\n  overflow: hidden;\n\n  &.open {\n    grid-template-rows: 1fr;\n  }\n\n  .inner {\n    min-height: 0;\n  }\n}",
+		"description": "accordion-animate"
+	},
+	"fade": {
+		"prefix": ["fade"],
+		"body": "transition: display 0.3s allow-discrete, overlay 0.3s allow-discrete, opacity 0.3s;\nopacity: 0;\n\n&[open] {\n\topacity: 1;\n\n\t@starting-style {\n\t\topacity: 0;\n\t}\n}",
+		"description": "fade effect"
+	},
+	"anchor": {
+		"prefix": ["anchor"],
+		"body": ".map-marker {\n    anchor-name: --my-anchor;\n}\n.marker-popup {\n    position: absolute;\n    top: anchor(--my-anchor bottom);\n    justify-self: anchor-center;\n}",
+		"description": "anchor"
+	},
+	"sr-only": {
+		"prefix": ["sr"],
+		"body": ".sr-only:not(:focus):not(:active) {\n    clip: rect(0 0 0 0); \n    clip-path: inset(50%);\n    height: 1px;\n    overflow: hidden;\n    position: absolute;\n    white-space: nowrap; \n    width: 1px;\n}",
+		"description": "sr-only"
+	},
+	"select dropdown": {
+		"prefix": ["select-dropdown", "sel"],
+		"body": ".form-field:has(.form-select) {\n    position: relative;\n    display: inline-block;\n    \n    &:after {\n        content: url(\"data:image/svg+xml;charset=UTF-8,%3csvg width='12' height='8' viewBox='0 0 12 8' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M6.00005 7.4748C5.86672 7.4748 5.74172 7.45397 5.62505 7.4123C5.50838 7.37064 5.40005 7.2998 5.30005 7.1998L0.700049 2.5998C0.516715 2.41647 0.425049 2.18314 0.425049 1.8998C0.425049 1.61647 0.516715 1.38314 0.700049 1.1998C0.883382 1.01647 1.11672 0.924805 1.40005 0.924805C1.68338 0.924805 1.91672 1.01647 2.10005 1.1998L6.00005 5.0998L9.90005 1.1998C10.0834 1.01647 10.3167 0.924805 10.6 0.924805C10.8834 0.924805 11.1167 1.01647 11.3 1.1998C11.4834 1.38314 11.575 1.61647 11.575 1.8998C11.575 2.18314 11.4834 2.41647 11.3 2.5998L6.70005 7.1998C6.60005 7.2998 6.49172 7.37064 6.37505 7.4123C6.25838 7.45397 6.13338 7.4748 6.00005 7.4748Z'/%3e%3c/svg%3e\");\n        position: absolute;\n        right: 10px;\n        bottom: 0;\n        transform: translateY(-50%);\n        height: 18px;\n        width: 18px;\n        z-index: 1;\n        pointer-events: none;\n    }\n    .form-select {\n        min-width: 230px;\n        background: stencilColor(color-white);\n        appearance: none;\n        -webkit-appearance: none;\n        -moz-appearance: none;\n    }\n}",
+		"description": "select dropdown"
+	}
+}

@@ -1,0 +1,92 @@
+{
+	// Place your snippets for html here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"svg": {
+		"prefix": "sv",
+		"body": [
+			"<svg class=\"icon\"><use xlink:href=\"#$1\" /></svg>"
+		],
+		"description": "svg snippet"
+	},
+	"svg object": {
+		"prefix": "svg",
+		"body": [
+			"<object data=\"assets/img/logo.svg\" type=\"image/svg+xml\"  class=\"logo-svg img-fluid\"> </object>"
+		],
+		"description": "svg object snippet"
+	},
+	"consolelog": {
+		"prefix": "sc",
+		"body": [
+			"<script>console.log('test', '{{}}');</script>"
+		],
+		"description": "console log script"
+	},
+	"table": {
+		"prefix": "table",
+		"body": [
+			"<table>\n\t<tr>\n\t\t<th>Title1</th>\n\t\t<th>Title2</th>\n\t</tr>\n\t<tr>\n\t\t<td>Cell1</td>\n\t\t<td>Cell2</td>\n\t</tr>\n\t<tr>\n\t\t<td>Cell1</td>\n\t\t<td>Cell2</td>\n\t</tr>\n</table>"
+		],
+		"description": "simple table structure"
+	},
+	"minimap mark": {
+		"prefix": "m",
+		"body": [
+			"<!-- MARK: $1 -->"
+		],
+		"description": "minimap mark"
+	},
+	"phone link": {
+		"prefix": "tel",
+		"body": [
+			"<a href=\"tel:+1800-284-5779\">call</a>"
+		],
+		"description": "phone link"
+	},
+	"mail link": {
+		"prefix": "mail",
+		"body": [
+			"<a href=\"mailto:dean@test.com\">call</a>"
+		],
+		"description": "mail link"
+	},
+	"accordion": {
+		"prefix": ["ac", "accordion"],
+		"body": [
+			"<details name=\"learn-css\" open>\n  <summary>Welcome to Learn CSS!</summary>\n  <p>An evergreen CSS course and reference to level up your web styling expertise.</p>\n</details>\n<details name=\"learn-css\">\n  <summary>Box Model</summary>\n  <p>Everything displayed by CSS is a box. Understanding how the CSS Box Model works is therefore a core foundation of CSS.</p>\n</details>\n<details name=\"learn-css\">\n  <summary>Selectors</summary>\n  <p>To apply CSS to an element you need to select it. CSS provides you with a number of different ways to do this, and you can explore them in this module.</p>\n</details>"
+		],
+		"description": "accordion snippet"
+	},
+	"target": {
+		"prefix": ["tar", "target", "blank"],
+		"body": [
+			"target=\"_blank\""
+		],
+		"description": "target blank"
+	},
+	"webdav": {
+		"prefix": ["webdav", "web"],
+		"body": [
+			"{{cdn 'webdav:contentChild.png'}}"
+		],
+		"description": "webdav"
+	},
+	"handlebar if": {
+		"prefix": ["if", "hif"],
+		"body": [
+			"{{#if $1}}$2{{/if}}"
+		],
+		"description": "handlebar if"
+	}
+}

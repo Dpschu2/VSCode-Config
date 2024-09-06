@@ -1,0 +1,64 @@
+{
+	// Place your snippets for javascript here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"For Each": {
+		"prefix": "fe",
+		"body": [
+			"$1.forEach(($2) => {\n\t$3\n});"
+		],
+		"description": "for each statement"
+	},
+	"Print to console": {
+		"prefix": "c",
+		"body": [
+			"console.log($1);$2"
+		],
+		"description": "Log output to console"
+	},
+	"Print variable to console": {
+		"prefix": "con",
+		"body": [
+			"console.log('$1', $2);$3"
+		],
+		"description": "Log output to console"
+	},
+	"Script description comment block template": {
+		"prefix": "sd",
+		"body": [
+			"/**\n* This script ...\n*\n* @param {number} base The base of the triangle.\n* @param {number} height The height of the triangle.\n* @returns {number} The area of the triangle.\n*/"
+		],
+		"description": "Script description comment block"
+	},
+	"Progress Console Log": {
+		"prefix": "progress",
+		"body": [
+			"const print = (string, isProgress) => {\n    process.stdout.write(`${string}${!isProgress ? '\\n' : ''}`);\n}\nconst logPercentageComplete = (current, total) => {\n    const progress = current / total;\n    const percent = Math.round(progress * 100);\n    const numChars = Math.round(progress * 20);\n    const emptyChars = 20 - numChars;\n    const bar = `[${Array(numChars).join('=')}${Array(emptyChars).join(' ')}]`;\n    print(`\\r${current} variant ids found. ${percent}%${percent === 100 ? ' Done!' : ''} ${bar}`, true);\n}"
+		],
+		"description": "Print Progress in terminal"
+	},
+	"Print": {
+		"prefix": "print",
+		"body": [
+			"const print = (string, isProgress) => {\n    process.stdout.write(`${string}${!isProgress ? '\\n' : ''}`);\n}\n"
+		],
+		"description": "Print"
+	},
+	"scrollto": {
+		"prefix": "scrollto",
+		"body": [
+			"$('html').animate( { scrollTop: $element.offset().top - 100 }, 0);"
+		],
+		"description": "scrollto"
+	}
+}
