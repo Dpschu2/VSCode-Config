@@ -41,7 +41,7 @@
         },
         {
             "label": "Open scss.json",
-            "command": "code \"${userHome}/Library/Application Support/Code/User/profiles/-1b554183/snippets/scss.json\"",
+            "command": "code \"${userHome}/Library/Application Support/Code - Insiders/User/profiles/-6097621e/snippets/scss.json\"",
             "type": "shell",
             "problemMatcher": [],
             "presentation": {
@@ -57,7 +57,7 @@
         },
         {
             "label": "Open javascript.json",
-            "command": "code \"${userHome}/Library/Application Support/Code/User/profiles/-1b554183/snippets/javascript.json\"",
+            "command": "code \"${userHome}/Library/Application Support/Code - Insiders/User/profiles/-6097621e/snippets/javascript.json\"",
             "type": "shell",
             "problemMatcher": [],
             "presentation": {
@@ -73,7 +73,7 @@
         },
         {
             "label": "Open html.json",
-            "command": "code \"${userHome}/Library/Application Support/Code/User/profiles/-1b554183/snippets/html.json\"",
+            "command": "code \"${userHome}/Library/Application Support/Code - Insiders/User/profiles/-6097621e/snippets/html.json\"",
             "type": "shell",
             "problemMatcher": [],
             "presentation": {
@@ -89,7 +89,7 @@
         },
         {
             "label": "Open liquid.json",
-            "command": "code \"${userHome}/Library/Application Support/Code/User/profiles/-1b554183/snippets/liquid.json\"",
+            "command": "code ${userHome}/Library/Application\\ Support/Code\\ -\\ Insiders/User/profiles/-6097621e/snippets/liquid.json",
             "type": "shell",
             "problemMatcher": [],
             "presentation": {

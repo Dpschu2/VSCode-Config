@@ -90,20 +90,29 @@ alias node18='nvm use 18.15.0'
 alias node16='nvm use 16.20.2'
 alias node14='nvm use 14.21.3'
 alias ..='cd ..'
+
+# BC
 alias ss='stencil start'
 alias si='stencil init'
 alias sb='stencil bundle'
 alias sp='stencil pull'
 alias gs='grunt svgstore'
-alias gw='gulp watch'
+alias cdw='cd widgets'
 alias wbp='widget-builder publish'
 alias wbs='widget-builder start'
 alias wbi='widget-builder init'
 alias wbc='widget-builder create'
+
+# Shopify
+alias sl='shopify auth logout'
+alias spt='shopify theme pull -l --only "templates/*.json"'
+alias gw='gulp watch'
+
 alias x86='arch -x86_64 zsh'
 alias arm='arch -arm64 zsh'
 alias brew='arch -x86_64 brew'
 alias rmp='rm -rf node_modules package-lock.json'
+alias python3.12.5='python3.10'
 
 # plugins=(git)
 plugins=(git zsh-syntax-highlighting)
@@ -150,7 +159,7 @@ export NVM_DIR="/Users/dean.schulz/.nvm"
 
 local curdir=$(print -P %~)
 if [[ "$curdir" == *"/BC-sites"* ]]; then
-  nvm use "18.15.0"
+  nvm use "20.16.0"
 elif [[ "$curdir" == *"/Shopify-sites"* ]]; then
   nvm use "20.16.0"
 fi

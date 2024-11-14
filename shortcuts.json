@@ -167,10 +167,6 @@
     },
     {
         "key": "shift+cmd+g",
-        "command": "workbench.action.editorLayoutTwoByTwoGrid"
-    },
-    {
-        "key": "shift+cmd+g",
         "command": "-editor.action.previousMatchFindAction",
         "when": "editorFocus"
     },
@@ -368,6 +364,11 @@
     {
         "key": "cmd+k cmd+\\",
         "command": "-workbench.action.splitEditorDown"
+    },
+    {
+        "key": "cmd+v",
+        "command": "pasteAndIndent.action",
+        "when": "editorTextFocus && !editorReadonly"
     },
     {
         "key": "cmd+v",
@@ -574,14 +575,6 @@
         "when": "!issues.creatingFromFile && resourceScheme == 'newIssue' && config.files.autoSave != 'off'"
     },
     {
-        "key": "shift+cmd+b",
-        "command": "HookyQR.beautify"
-    },
-    {
-        "key": "cmd+b",
-        "command": "HookyQR.beautifyFile"
-    },
-    {
         "key": "shift+alt+f",
         "command": "explorer.newFolder"
     },
@@ -595,8 +588,20 @@
     },
     {
         "key": "cmd+j",
+        "command": "runCommands",
+        "when": "editorTextFocus && !editorReadonly && !editorHasSelection",
+        "args": {
+          "commands": [
+            "cursorEnd",
+            "cursorHomeSelect",
+            "extension.breakFromComma"
+          ]
+        }
+    },
+    {
+        "key": "cmd+j",
         "command": "editor.action.joinLines",
-        "when": "editorTextFocus && !editorReadonly"
+        "when": "editorTextFocus && !editorReadonly && editorHasSelection"
     },
     {
         "key": "ctrl+j",
@@ -925,6 +930,10 @@
         "command": "editor.toggleFold"
     },
     {
+        "key": "alt alt",
+        "command": "editor.unfold"
+    },
+    {
         "key": "shift+alt+d",
         "command": "-editor.detectLanguage",
         "when": "editorTextFocus && !notebookEditable"
@@ -966,5 +975,22 @@
     {
         "key": "shift+alt+b",
         "command": "simpleBrowser.show"
+    },
+    {
+        "key": "shift+cmd+o",
+        "command": "workbench.action.files.openFolderInNewWindow"
+    },
+    {
+        "key": "shift+cmd+o",
+        "command": "-workbench.action.terminal.openDetectedLink",
+        "when": "terminalFocus && terminalHasBeenCreated"
+    },
+    {
+        "key": "alt+u",
+        "command": "extension.unescapeJsonString"
+    },
+    {
+        "key": "shift+cmd+g",
+        "command": "workbench.action.editorLayoutTwoColumnsBottom"
     }
 ]

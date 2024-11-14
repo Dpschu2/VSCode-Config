@@ -29,9 +29,16 @@
 	"consolelog": {
 		"prefix": "sc",
 		"body": [
-			"<script>console.log('test', '{{}}');</script>"
+			"<script>console.log('test', {{{json $1}}});</script>"
 		],
 		"description": "console log script"
+	},
+	"Print variable to console": {
+		"prefix": "con",
+		"body": [
+			"console.log('$1', $2);$3"
+		],
+		"description": "Log output to console"
 	},
 	"table": {
 		"prefix": "table",

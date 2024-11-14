@@ -23,7 +23,7 @@
 	"stencil color": {
 		"prefix": "sc",
 		"body": [
-			"stencilColor($1)"
+			"stencilColor($1);"
 		],
 		"description": "print stencil color function"
 	},
@@ -96,6 +96,13 @@
 			"var(--color-primary)"
 		],
 		"description": "print shopify primary color var"
+	},
+	"shopify color primary dark": {
+		"prefix": "vvpd",
+		"body": [
+			"var(--color-primaryDark)"
+		],
+		"description": "print shopify primary dark color var"
 	},
 	"shopify color black": {
 		"prefix": "vvb",
@@ -216,6 +223,13 @@
 		],
 		"description": "medium include"
 	},
+	"include header": {
+		"prefix": "ih",
+		"body": [
+			"@include breakpoint(\"header\") {\n\t$1\n}"
+		],
+		"description": "header include"
+	},
 	"include small": {
 		"prefix": "is",
 		"body": [
@@ -243,6 +257,13 @@
 			"@include maxBreakpoint(\"medium\") {\n\t$1\n}"
 		],
 		"description": "medium include max"
+	},
+	"include header max": {
+		"prefix": "ihm",
+		"body": [
+			"@include maxBreakpoint(\"header\") {\n\t$1\n}"
+		],
+		"description": "header include max"
 	},
 	"include small max": {
 		"prefix": "ism",

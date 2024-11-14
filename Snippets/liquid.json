@@ -43,7 +43,7 @@
 	"consolelog": {
 		"prefix": "con",
 		"body": [
-			"<script>console.log('test', '{{}}');</script>"
+			"<script>console.log('test', {{ $1 | json }});</script>"
 		],
 		"description": "console log script"
 	},
@@ -74,5 +74,19 @@
 			"<a href=\"mailto:dean@test.com\">call</a>"
 		],
 		"description": "mail link"
+	},
+	"if inline": {
+		"prefix": "lif",
+		"body": [
+			"{% if $1 %} $2{% endif %}"
+		],
+		"description": "if (inline)"
+	},
+	"if else inline": {
+		"prefix": "life",
+		"body": [
+			"{% if $1 %} $2{% else %} $3{% endif %}"
+		],
+		"description": "if else (inline)"
 	}
 }
